@@ -8,21 +8,27 @@ import (
 func main() {
 	var input string
 
-	fmt.Print("Apakah Palindrome ? ")
+	fmt.Println("Apakah palindrome ? ")
+	fmt.Print("Masukkan Kata : ")
 	fmt.Scanln(&input)
 
-	input = strings.ToLower(strings.ReplaceAll(input, " ", ""))
-	if isPalindrome(input) {
-		fmt.Printf("%s adalah palindrome\n", input)
-	} else {
-		fmt.Printf("%s adalah bukan palindrome\n", input)
-	}
-}
-func isPalindrome(s string) bool {
-	for i := 0; i < len(s)/2; i++ {
-		if s[i] != s[len(s)-i-1] {
-			return false
+	input = strings.ToLower(input)
+
+	palindrome := true
+	Leng := len(input)
+
+	for i := 0; i < Leng/2; i++ {
+		if input[i] != input[Leng-i-1] {
+			palindrome = false
+			break
 		}
 	}
-	return true
+
+	fmt.Printf("Captured : %s", input)
+
+	if palindrome {
+		fmt.Printf("\n%s palindrome", input)
+	} else {
+		fmt.Printf("\n%s bukan palindrome", input)
+	}
 }
