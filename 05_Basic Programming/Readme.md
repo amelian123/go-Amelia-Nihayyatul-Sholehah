@@ -25,3 +25,5 @@ BASIC PROGRAMMING OF GOLANG
 4. Bitwise, contohnya &, |, ^, <<, >>
 5. Assigment, contohnya =, +=, -=, *=, /=, <<=, >>=, &=, ^=, |=
 6. Miscellaneous, contohnya &, * (Pointer)
+
+Pada section basic of programming ini mempelajari bagaimana struktur branching dan cara looping dengan if, else statement, cara switch<\>, fallthrough>_ , serta continue and break,
