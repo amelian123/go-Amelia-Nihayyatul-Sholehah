@@ -2,8 +2,8 @@ package main
 
 type user struct {
 	id       int
-	username int //username string
-	password int //password string
+	username int //seharusnya username string
+	password int //seharusnya password string
 }
 
 //pada line ke-3, username dan password seharusnya bertipe data string
@@ -22,7 +22,7 @@ func (u userservice) getuserbyid(id int) user { //func (u *userservice) getuserb
 			return r
 		}
 	}
-	//pada line ke-14 dan ke-18, method getallusers dan getuserbyid diganti menggunakan tipe pointer (*userservice) agar data pada userservice bisa diubah pada saat method tersebut dipanggil.
+//pada line ke-14 dan ke-18, method getallusers dan getuserbyid diganti menggunakan tipe pointer (*userservice) agar data pada userservice bisa diubah pada saat method tersebut dipanggil.
 
 	return user{}
 }
