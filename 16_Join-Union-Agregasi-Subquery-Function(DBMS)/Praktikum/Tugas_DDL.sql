@@ -253,7 +253,7 @@ UPDATE transaction_detail SET quantity = 3 WHERE product_id = 1;
 
 SOAL 4 
 --4.a
-DELETE FROM product WHERE id = 1;
+DELETE FROM product WHERE id IN (1);
 --4.b
 DELETE FROM product WHERE product_type_id = 1;
 
