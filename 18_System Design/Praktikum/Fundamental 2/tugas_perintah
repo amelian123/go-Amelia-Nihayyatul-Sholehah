@@ -1,0 +1,21 @@
+Terdapat sebuah query pada SQL yaitu `SELECT * FROM users;`
+Dengan tujuan yang sama, tuliskan dalam bentuk perintah:
+1. Redis
+2. Neo4j
+3. Cassandra
+
+Jawaban :
+1. Redis, caranya yaitu :
+   => menggunakan perintah SMEMBERS untuk mendapatkan semua ID pengguna dari set "users". Misalnya set pengguna diberi nama "users", maka perintahnya yaitu : SMEMBERS users
+   => selanjutnya, untuk setiap ID pengguna yang ditemukan dalam set "users", menggunakan perintah HGETALL untuk mendapatkan semua informasi pengguna dari hash yang sesuai. Misalnya informasi pengguna dengan ID "999" disimpan dalam hash dengan nama "user:999", maka perintahnya yaitu : HGETALL user:123
+   => gabungkanlah semua hasil dari langkah sebelumnya untuk mendapatkan semua informasi pengguna yang tersimpan dalam Redis.
+
+2. Neo4j, caranya yaitu :
+   => Untuk mendapatkan semua node dengan label "User" dalam graf, perintahnya yaitu : 
+      MATCH (u:User)
+      RETURN u
+
+3. Cassandra, caranya yaitu :
+   => Mengaktifkan keyspace yang sesuai dengan tabel pengguna yang digunakan. Misalnya tabel pengguna yang digunakan disimpan di keyspace "users_keyspace" dan bernama "users_table", maka gunakan perintah USE untuk mengaktifkan keyspace tersebut : USE users_keyspace;
+   => Setelah keyspace aktif, jalankan perintah SELECT untuk mengambil semua data dari tabel "users_table". Perintahnya yaitu : SELECT * FROM users_table;
+
