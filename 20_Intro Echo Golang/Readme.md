@@ -1,7 +1,5 @@
 ## Section 20_INTRO ECHO GOLANG
 
-## Section 19_INTRO RESTFUL API
-
 ## API => Application Programming Interface
 >> API merupakan sekumpulan fungsi dan prosedur yang memungkinkan pembuatan aplikasi yang mengakses fitur atau data dari sistem operasi, aplikasi, atau layanan lainnya.
 >> API merupakan antarmuka yang berfungsi sebagai penghubung antara sebuah aplikasi dan aplikasi lainnya, atau antara klien dan server, untuk memungkinkan integrasi fitur tanpa harus menambahkan data secara manual.
