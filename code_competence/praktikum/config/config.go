@@ -20,11 +20,11 @@ type Config struct {
 
 func InitDB() *gorm.DB {
 	config := Config{
-		DB_Username: "alta",
-		DB_Password: "root",
+		DB_Username: "root",
+		DB_Password: "Amelian.8123",
 		DB_Port:     "3306",
 		DB_Host:     "localhost",
-		DB_Name:     "code_competence",
+		DB_Name:     "laragon db",
 	}
 
 	connectionString := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s?charset=utf8&parseTime=True",
